@@ -36,4 +36,5 @@ You can initialize this repository with code from a Subversion, Mercurial, or TF
 
 提示3：引入其他仓库的的代码  
 
-(2) 
+(2)同一个github账户，如何实现异地多个电脑提交代码修改到仓库  
+  
