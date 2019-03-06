@@ -11,7 +11,7 @@ github主页:https://github.com
   
 # part2 upload code to github  
   
-(1)登录github帐号，创建一个空的repo，不要添加readMe，ignore，license等内容，  
+登录github帐号，创建一个空的repo，不要添加readMe，ignore，license等内容，  
 然后github会提示你如何进行下一步操作，提示内容如下：  
 <pre>
 …or create a new repository on the command line  
