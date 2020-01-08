@@ -64,4 +64,19 @@ git push origin master
 git pull origin master  
 </pre>  
 
-## 6.win客户端？？
+## 6.win客户端
+登录git官方网站，https://git-scm.com/，下载windows版本git软件，安装。
+windows版本的git软件包含bash命令行工具，对于linux使用者来说，很nice。
+和linux客户端类似，windows下也要配置ssh密钥对。
+(1)打开git bash工具。
+(2)输入ssh-keygen生成密钥对。
+(3)会在用户目录的.ssh文件夹下生成公私钥。
+win下的操作过程和linux几乎一模一样，nice！
+(4)将生成的公钥拷贝到git服务器的authorized_keys文件中。
+(5)在git bash客户端下git clone项目，修改并git push修改。
+
+# Troubleshooting
+(1)git for windows下git bash中文乱码
+打开gitbash在界面上右键->options->Text->locale选择zh_CN，Characterset选择GBK，
+问题解决，ping的结果中文正常显示了，但是文件夹名称又乱码，把Characterset设置
+为utf-8文件夹名称显示正常了，ping结果中文又乱码！！
