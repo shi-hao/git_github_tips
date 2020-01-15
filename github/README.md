@@ -66,4 +66,3 @@ git branch用于查看本地的所有分支，git branch -a可以查看远程项
 </pre>
 local_name是创建的本地分子的名字，remote_branch_name是使用git branch -a查看到的远程分支  
 的名字，将远程分支remote_branch_name克隆到本地，命名为local_name，并切换到该分支。
-
