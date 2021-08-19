@@ -18,6 +18,6 @@ chose the git as backup software
 
 establish git server?
 
-## 3.from github to self-established git server
+## 3. move repo from github to self-established git server
 
 
