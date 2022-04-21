@@ -20,13 +20,16 @@ That's it. Thank you.
 # Duplicating a github repo with history to self-established git server  
 1) Open a command prompt and Clone the source/existing repo using the command:  
    git clone --bare https://sourceRepoURL  
-   then you will get a dir, with name repo_name.git  
+   then you will get a dir, with name repo-name.git  
   
-2) copy the repo_name.git dir to self-established git server   
+2) copy the repo-name.git dir to self-established git server   
   
-3) git clont username@ip:dir+repo_name.git  
+3) git clone username@ip:dir + repo-name.git  
   
-move all the github repo to self-established git server!  
-github can be saved by nothing, even VPN!  
-github bring users very bad using experience in china, web cannot opened,  
-pull/push very slow, often failed! github has been dead in china.  
+
+**COMPLAINT**
+Move all the github repo to self-established git server!  
+Github can be reached by nothing, even VPN!  
+Github bring users very bad using experience in china, 
+Web pages cannot be opened, pull/push very slow, often failed!   
+Github has been dead in china.  
