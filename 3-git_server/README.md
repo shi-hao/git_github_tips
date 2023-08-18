@@ -27,7 +27,7 @@
  mkdir  mypic.git        
  cd mypic.git        
  git init --bare        
- Initialized empty Git repository in /home/git/mypic.git/        
+	"Initialized empty Git repository in /home/git/mypic.git/"          
         
 ## 4.客户端创建ssh登录密钥对        
 在客户端pc上创建ssh密钥对。        
