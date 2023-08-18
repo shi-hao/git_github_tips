@@ -8,61 +8,47 @@
         
 环境：2台ubuntu16 PC，一台服务端，一台客户端        
         
-## 1. 安装git        
+## 1.安装git        
 使用如下指令安装git，以ubuntu16为例进行安装。        
-<pre>        
-sudo apt update        
-sudo apt-get install git        
-</pre>        
+ sudo apt update        
+ sudo apt-get install git        
         
 ## 2.服务器端创建用户并配置SSH        
 在服务器端创建一个用户，并为该用户创建.ssh目录。        
-<pre>        
-sudo adduser git        
-su git        
-cd        
-mkdir .ssh && chmod 700 .ssh        
-touch .ssh/authorized_keys && chmod 600 .ssh/authorized_keys        
-</pre>        
+ sudo adduser git        
+ su git        
+ cd        
+ mkdir .ssh && chmod 700 .ssh        
+ touch .ssh/authorized_keys && chmod 600 .ssh/authorized_keys        
         
 ## 3.服务器创建空仓库        
 使用如下指令在服务器上创建一个空的仓库。        
-<pre>        
-cd /home/git        
-mkdir  mypic.git        
-cd mypic.git        
-git init --bare        
-Initialized empty Git repository in /home/git/mypic.git/        
-</pre>        
+ cd /home/git        
+ mkdir  mypic.git        
+ cd mypic.git        
+ git init --bare        
+ Initialized empty Git repository in /home/git/mypic.git/        
         
 ## 4.客户端创建ssh登录密钥对        
 在客户端pc上创建ssh密钥对。        
-<pre>        
-ssh-keygen        
-</pre>        
+ ssh-keygen        
 默认会在当前用户的.ssh目录下生成id_rsa私钥和id_rsa.pub公钥，        
 将生成的公钥复制到服务端的.ssh/authorized_keys文件中。        
-<pre>        
-cat id_rsa.pub >> /home/git/.ssh/authorized_keys        
-</pre>        
+ cat id_rsa.pub >> /home/git/.ssh/authorized_keys        
         
 ## 5.客户端git clone项目，修改并git push更新        
 首先保证客户端可以正常访问到服务器，网络正常。        
 然后使用如下指令克隆创建的项目。        
-<pre>        
-git clone username@ip:dir+project_name        
-git clone git@192.168.0.129:~/mypic.git        
-</pre>        
+ git clone username@ip:dir+project_name        
+ git clone git@192.168.0.129:~/mypic.git        
+
 进行必要的修改，并提交到仓库。        
-<pre>        
-git add *        
-git commit -m "log"        
-git push origin master        
-</pre>        
+ git add *        
+ git commit -m "log"        
+ git push origin master        
+
 拉取服务器更新到本地。      
-<pre>      
-git pull origin master      
-</pre>      
+ git pull origin master      
     
 ## 6.win客户端    
 登录git官方网站，  
