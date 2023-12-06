@@ -1,10 +1,20 @@
 #part1  git pratical skills    
   
 1.设置git    
-设置用户名：   git   config  --global  user.name   bleach    
+设置用户名：   git   config  --global  user.name	bleach    
 设置邮箱：     git   config  --global  user.email   xxx@163.com    
-设置显示颜色 ：git   config  --global  color.ui      auto      
+设置显示颜色： git   config  --global  color.ui     auto      
+
+提交代码时，git log中显示对应的用户名和邮箱，如下。
+
+commit a6daf20f6c8e111bfb91a2d68ad278a3883de8f7
+Author: bleach <shi7631470@163.com>
+Date:   Tue Nov 21 09:00:42 2023 +0800
+
+    edit
+
 查看全局变量： git   config  --global  --list  
+			   git   config  -l
   
 2.三种状态  
 版本管理下的文件有三个状态：  
